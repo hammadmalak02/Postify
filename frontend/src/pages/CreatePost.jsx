@@ -56,10 +56,10 @@ const CreatePost = () => {
               {preview
                 ? <img src={preview} alt="preview" style={styles.previewImg} />
                 : <div style={styles.placeholder}>
-                    <div style={styles.plusIcon}>⊕</div>
-                    <div style={styles.uploadText}>Drop image here</div>
-                    <div style={styles.uploadHint}>or click to browse</div>
-                  </div>
+                  <div style={styles.plusIcon}>⊕</div>
+                  <div style={styles.uploadText}>Drop image here</div>
+                  <div style={styles.uploadHint}>or click to browse</div>
+                </div>
               }
               <input ref={fileRef} type="file" accept="image/*" style={{ display: 'none' }}
                 onChange={(e) => handleFile(e.target.files[0])} />
@@ -94,8 +94,8 @@ const CreatePost = () => {
                 disabled={!image || loading}>
                 {loading
                   ? <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
-                      <span style={styles.spinner} /> Publishing...
-                    </span>
+                    <span style={styles.spinner} /> Publishing...
+                  </span>
                   : '✦ Publish Post'}
               </button>
             </form>
