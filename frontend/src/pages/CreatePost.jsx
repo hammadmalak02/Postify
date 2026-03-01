@@ -36,7 +36,7 @@ const CreatePost = () => {
 
       <div style={styles.container}>
         <div style={styles.header}>
-          <div style={styles.logo}>✦ POSTLY</div>
+          <div style={styles.logo}>✦ POSTIFY</div>
           <button style={styles.feedBtn} onClick={() => navigate('/feed')}>View Feed →</button>
         </div>
 
